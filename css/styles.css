@@ -1,4 +1,26 @@
-/* .visually-hidden {
+body{ 
+     font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    
+}
+
+ul{
+    margin: 0;
+    padding-left: 0;
+}
+
+img{
+    display: block;
+}
+
+.visually-hidden {
  position: absolute;
  width: 1px;
  height: 1px;
@@ -15,9 +37,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+}
 
-svg{
+
+.arrow{
     stroke: #fff;
     fill: #fff;
+}
+
+.hero-baner{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/optimiz/chocolate_main-mob.jpg) no-repeat center;
+
+}
+
+.ingredients{
+    border-radius: 15px;
+    width: 260px;
+    height: 270px;
+    background: #fd9222;
+}
+
+.ingredients-1{
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+    width: 260px;
+    height: 270px;
+    background: #fff;
+}
+
+.arrow-1{
+    stroke: #fd9222;
+    fill: #fd9222;
+}
+
+.ingredients-2{
+    border-radius: 15px;
+width: 260px;
+height: 270px;
+background: #1e1823;
 }

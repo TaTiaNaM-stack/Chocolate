@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chocolate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
     <header>
         <nav>
             <a href="/index.html">
                 SIMPLY CHOCOLATE
-                <svg class="visually-hidden" width="21" height="21">
+                <svg class="visually-hidden-mob" width="21" height="21">
+                    <use href="./images/icon.svg#icon-chocolate-logo-mob"></use>
+                </svg>
+                <svg class="visually-hidden-pc" width="24" height="24">
                     <use href="./images/icon.svg#icon-chocolate-logo-mob"></use>
                 </svg>
             </a>
@@ -48,7 +53,33 @@
         </ul>
     </header>
     <main>
-        <section>
+        <section class="hero">
+            <source
+                      srcset="
+                        ./images/optymiz/chocolate_main-pc.jpg    1x,
+                        ./images/optymiz/chocolate_main-pc-@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/optimiz/chocolate_main-tab.jpg    1x,
+                        ./images/optimiz/chocolate_main-tab-@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/optimiz/chocolate-mob.jpg    1x,
+                        ./images/optimiz/chocolate-mob-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/optimiz/chocolate_main-pc.jpg"
+                      alt="hero-chocolate"
+                    />
+                  </picture>
             <h1>Treat yourself or a loved one to 
 our finest ingredients for a moment 
 of pure delight!</h1>
@@ -88,76 +119,86 @@ of pure delight!</h1>
         <section>
             <h2>It all adds up to one exceptional taste sensation</h2>
             <ul>
-                <li>
+                <li class="ingredients">
+                    <svg class="arrow" width="24" height="24">
+                        <use href="./images/icon.svg#icon-arrow"></use>
+                    </svg>
                     <img
-                    src="#"
+                    src="./images/ingridients-tab-png/img-1.png"
                     alt="MILK CHOCOLATE"/>
                     <h3>MILK CHOCOLATE</h3>
-                    <!-- <p>Rich and creamy milk chocolate bar made with the finest cocoa beans.</p>
-                    <span>$5.99</span>
-                    <button>Add to cart</button> -->
                 </li>
-                <li>
+                <li class="ingredients-1">
+                    <svg class="arrow-1" width="24" height="24">
+                        <use href="./images/icon.svg#icon-arrow"></use>
+                    </svg>
                     <img
-                    src="#"
+                    src="./images/ingridients-tab-png/img-2.png"
                     alt="MILK"/>
                     <h3>MILK</h3>
-                    <!-- <p>Decadent chocolate truffles filled with a smooth ganache center.</p>
-                    <span>$12.99</span>
-                    <button>Add to cart</button> -->
                 </li>
-                <li>
+                <li class="ingredients-2">
+                    <svg class="arrow" width="24" height="24">
+                        <use href="./images/icon.svg#icon-arrow"></use>
+                    </svg>
                     <img
-                    src="#"
+                    src="./images/ingridients-tab-png/img-3.png"
                     alt="NUTS"/>
                     <h3>NUTS</h3>
-                    <!-- <p>Intense and bittersweet dark chocolate bar with a high cocoa content.</p>
-                    <span>$6.99</span>
-                    <button>Add to cart</button> -->
                 </li>
-                <li>
+                <li class="ingredients-1">
+                    <svg class="arrow-1" width="24" height="24">
+                        <use href="./images/icon.svg#icon-arrow"></use>
+                    </svg>
                     <img
-                    src="#"
+                    src="./images/ingridients-tab-png/img-4.png"
                     alt="SEMI - SWEET CHOCOLATE"/>
                     <h3>SEMI - SWEET CHOCOLATE</h3>
-                    <!-- <p>Intense and bittersweet dark chocolate bar with a high cocoa content.</p>
-                    <span>$6.99</span>
-                    <button>Add to cart</button> -->
                 </li>
-                <li>
+                <li class="ingredients">
+                    <svg class="arrow" width="24" height="24">
+                        <use href="./images/icon.svg#icon-arrow"></use>
+                    </svg>
                     <img
-                    src="#"
+                    src="./images/ingridients-tab-png/img-5.png"
                     alt="CACAO"/>
                     <h3>CACAO</h3>
-                    <!-- <p>Intense and bittersweet dark chocolate bar with a high cocoa content.</p>
-                    <span>$6.99</span>
-                    <button>Add to cart</button> -->
                 </li>
-                <li>
+                <li class="ingredients-1">
+                    <svg class="arrow-1" width="24" height="24">
+                        <use href="./images/icon.svg#icon-arrow"></use>
+                    </svg>
                     <img
-                    src="#"
+                    src="./images/ingridients-tab-png/img-6.png"
                     alt="RASPBERRY"/>
                     <h3>RASPBERRY</h3>
-                    <!-- <p>Intense and bittersweet dark chocolate bar with a high cocoa content.</p>
-                    <span>$6.99</span>
-                    <button>Add to cart</button> -->
                 </li>
-                <li>
+                <li class="ingredients-2">
+                    <svg class="arrow" width="24" height="24">
+                        <use href="./images/icon.svg#icon-arrow"></use>
+                    </svg>
                     <img
-                    src="#"
+                    src="./images/ingridients-tab-png/img-7.png"
                     alt="COCONUT OIL"/>
                     <h3>COCONUT OIL</h3>
-                    <!-- <p>Intense and bittersweet dark chocolate bar with a high cocoa content.</p>
-                    <span>$6.99</span>
-                    <button>Add to cart</button> -->
+                </li>
+                <li class="ingredients-1">
+                    <svg class="arrow-1" width="24" height="24">
+                        <use href="./images/icon.svg#icon-arrow"></use>
+                    </svg>
+                    <img
+                    src="./images/ingridients-tab-png/img-8.png"
+                    alt="VANILLA"/>
+                    <h3>VANILLA</h3>
                 </li>
             </ul>
         </section>
         <section>
             <h2>How it’s made?</h2>
             <img
-            src="#"
-            alt="chocolate production"/>
+            srcset="./images/optimiz/image-made-pc.jpg 1x, ./images/optimiz/image-made-pc-2@.jpg 2x"
+            src="./images/optimiz/image-made-pc.jpg"
+            alt="how it's made"/>
             <h3>Try  our chocolates today and discover the perfect balance of flavor</h3>
             <ul>
                 <li>
