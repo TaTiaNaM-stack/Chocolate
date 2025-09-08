@@ -122,6 +122,8 @@ justify-content: center;
     fill: #111;
 }
 
+/*section-1 hero */
+
 .hero{
     background-repeat: no-repeat;
     background-position: center;
@@ -203,6 +205,39 @@ font-size: 12px;
 line-height: 117%;
 letter-spacing: -0.03em;
 color: #fff;
+}
+
+/*section-2 description*/
+
+.section-description{
+    background-color: #1e1823;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+
+
+.list-blok{
+    padding-bottom: 20px;
+
+}
+
+.last{
+    padding-bottom: 0;
+}
+
+.title-description{
+    font-weight: 600;
+font-size: 18px;
+color: #fff;
+padding-top: 22px;
+padding-bottom: 18px;
+}
+
+.txt-description{
+    font-weight: 400;
+font-size: 14px;
+letter-spacing: -0.02em;
+color: rgba(255, 255, 255, 0.7);
 }
 
 .arrow{
@@ -315,7 +350,7 @@ height: 40px;
 
     }
 
-    /*hero*/
+    /*section-1 hero*/
 
     .hero{
         background-image: url(../images/optimiz/chocolate_main-tab.jpg);
@@ -337,6 +372,8 @@ height: 40px;
     justify-content: space-between;
 }
 
+/*section-2 description*/
+
 }
 
 @media (min-resolution: 192dpi) {
@@ -356,11 +393,14 @@ height: 40px;
         gap: 24px;
     }
 
-    /*hero*/
+    /*section-1 hero*/
 
     .hero{
         background-image: url(../images/optimiz/chocolate_main-pc.jpg);
     }
+
+/*section-2 description*/
+
 }
 
 @media (min-resolution: 192dpi) {
