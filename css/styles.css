@@ -133,12 +133,12 @@ justify-content: center;
     margin-right: auto;
 
     border-radius: 30px;
-    background-image: url(../images/optimiz/chocolate_main-mob.jpg);
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/optimiz/chocolate_main-mob.jpg);
 }
 
 @media (min-resolution: 192dpi) {
     .hero{
-        background-image: url(../images/optimiz/chocolate_main-mob-2@.jpg);
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/optimiz/chocolate_main-mob-2@.jpg);
     }
 }
 
@@ -363,7 +363,7 @@ height: 40px;
     /*section-1 hero*/
 
     .hero{
-        background-image: url(../images/optimiz/chocolate_main-tab.jpg);
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/optimiz/chocolate_main-tab.jpg);
     }
 
     .hero-title{
@@ -404,7 +404,7 @@ height: 40px;
 
 @media (min-resolution: 192dpi) {
     .hero{
-        background-image: url(../images/optimiz/chocolate_main-tab-2@.jpg);
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/optimiz/chocolate_main-tab-2@.jpg);
     }
 }
 
@@ -422,7 +422,7 @@ height: 40px;
     /*section-1 hero*/
 
     .hero{
-        background-image: url(../images/optimiz/chocolate_main-pc.jpg);
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/optimiz/chocolate_main-pc.jpg);
     }
 
 /*section-2 description*/
@@ -454,6 +454,6 @@ height: 40px;
 
 @media (min-resolution: 192dpi) {
     .hero{
-        background-image: url(../images/optimiz/chocolate_main-pc-2@.jpg);
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/optimiz/chocolate_main-pc-2@.jpg);
     }
 }
