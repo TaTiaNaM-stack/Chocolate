@@ -50,58 +50,29 @@ img{
 }
 
 .logo{
+display: flex;
+gap: 4px;
 font-weight: 700;
 font-size: 14px;
 line-height: 129%;
 letter-spacing: -0.03em;
 color: #111;
+align-items: center;
+justify-content: center;
 }
 
 .logo-italic{
     font-style: italic;
 }
 
-/* .visually-hidden-pc {
- position: absolute;
- width: 1px;
- height: 1px;
- margin: -1px;
- border: 0;
- padding: 0;
- white-space: nowrap;
- clip-path: inset(100%);
- clip: rect(0 0 0 0);
- overflow: hidden;
-} */
-
 .visually-hidden-pc{
     opacity: 0;
 }
 
-/* .description{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .nav-header{
     display: flex;
     align-items: center;
-    gap: 50px;
-}
-
-.nav-list{
-    display: flex;
-    gap: 30px;
-    align-items: center;
     justify-content: center;
-    font-weight: 500;
-font-size: 14px;
-
-/* line-height: 16px; */ 
-line-height: 114%;
-letter-spacing: -0.02em;
-color: #111;
 }
 
 .social-list{
@@ -129,6 +100,23 @@ color: #111;
     height: 40px;
 }
 
+.menu-tab{
+    display: none;
+}
+
+.burger-menu{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.burger{
+    stroke: #111;
+    stroke-width: 2px;
+    fill: #111;
+}
+
 .hero{
     background-repeat: no-repeat;
     background-position: center;
@@ -142,14 +130,23 @@ color: #111;
     background-image: url(../images/optimiz/chocolate_main-mob.jpg);
 }
 
+.hero-container{
+    padding: 395px 20px 20px 20px;
+}
+
+.hero-title{
+    font-weight: 500;
+font-size: 20px;
+
+/* line-height: 24px; */ 
+line-height: 120%;
+letter-spacing: -0.03em;
+color: #fff;
+}
+
 .arrow{
     stroke: #fff;
     fill: #fff;
-}
-
-.hero-baner{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/optimiz/chocolate_main-mob.jpg) no-repeat center;
-
 }
 
 .ingredients{
@@ -193,4 +190,79 @@ color: #111;
     padding: 8px;
     width: 40px;
     height: 40px;
+}
+
+@media screen and (min-width: 768px){
+    /*header*/
+
+    .visually-hidden-mob{
+        display: none;
+    }
+
+    .visually-hidden-pc{
+        opacity: 1;
+    }
+    
+    .menu-tab{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .menu-tab{
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        justify-content: center;
+    }
+
+    .list-header{
+            font-weight: 500;
+font-size: 14px;
+
+/* line-height: 16px; */ 
+line-height: 114%;
+letter-spacing: -0.02em;
+color: #111;
+    }
+
+    
+.nav-list{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+    .social-list{
+        gap: 14px;
+    }
+
+    .link-face-heder{
+        stroke: #111;
+        fill: #111;border: 1px solid rgba(17, 17, 17, 0.1);
+border-radius: 10px;
+padding: 8px;
+width: 40px;
+height: 40px;
+
+    }
+}
+
+@media screen and (min-width: 1158px){
+    /*header*/
+
+    .menu-tab{
+        gap: 90px;
+    }
+
+    .nav-list{
+        gap: 24px;
+    }
 }
