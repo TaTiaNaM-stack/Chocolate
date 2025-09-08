@@ -129,9 +129,15 @@ justify-content: center;
     background-color: #2e2f42;
     margin-left: auto;
     margin-right: auto;
-    max-width: 734px;
+
     border-radius: 30px;
     background-image: url(../images/optimiz/chocolate_main-mob.jpg);
+}
+
+@media (min-resolution: 192dpi) {
+    .hero{
+        background-image: url(../images/optimiz/chocolate_main-mob-2@.jpg);
+    }
 }
 
 .hero-container{
@@ -149,11 +155,15 @@ letter-spacing: -0.03em;
 color: #fff;
 }
 
+.title-dwn{
+    display: none;
+}
+
 .hero-btns{
     display: flex;
     align-items: center;
     gap: 16px;
-    flex-wrap: wrap;
+    flex-shrink: 0;
 }
 
 .btn-hero{
@@ -307,8 +317,17 @@ height: 40px;
 
     /*hero*/
 
+    .hero{
+        background-image: url(../images/optimiz/chocolate_main-tab.jpg);
+    }
+
     .hero-title{
         font-size: 28px;
+        width: 420px;
+    }
+
+    .title-dwn{
+        display: inline;
     }
 
     
@@ -320,6 +339,12 @@ height: 40px;
 
 }
 
+@media (min-resolution: 192dpi) {
+    .hero{
+        background-image: url(../images/optimiz/chocolate_main-tab-2@.jpg);
+    }
+}
+
 @media screen and (min-width: 1158px){
     /*header*/
 
@@ -329,5 +354,17 @@ height: 40px;
 
     .nav-list{
         gap: 24px;
+    }
+
+    /*hero*/
+
+    .hero{
+        background-image: url(../images/optimiz/chocolate_main-pc.jpg);
+    }
+}
+
+@media (min-resolution: 192dpi) {
+    .hero{
+        background-image: url(../images/optimiz/chocolate_main-pc-2@.jpg);
     }
 }
