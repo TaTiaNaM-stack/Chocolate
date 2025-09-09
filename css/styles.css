@@ -770,6 +770,7 @@ color: #111;
     .choco-card{
         width: 270px;
         height: 364px;
+        width: calc((100% - 18px * 3) / 4);
     }
 
 }
