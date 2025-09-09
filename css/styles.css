@@ -55,15 +55,15 @@ img{
 }
 
 .logo{
-display: flex;
-gap: 4px;
-font-weight: 700;
-font-size: 14px;
-line-height: 129%;
-letter-spacing: -0.03em;
-color: #111;
-align-items: center;
-justify-content: center;
+    display: flex;
+    gap: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.03em;
+    color: #111;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-italic{
@@ -149,12 +149,12 @@ justify-content: center;
 .hero-title{
     width: 250px;
     font-weight: 500;
-font-size: 20px;
+    font-size: 20px;
 
-/* line-height: 24px; */ 
-line-height: 120%;
-letter-spacing: -0.03em;
-color: #fff;
+    /* line-height: 24px; */ 
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: #fff;
 }
 
 .title-dwn{
@@ -174,23 +174,23 @@ color: #fff;
     background: #fd9222;
     border: none;
     border-radius: 100px;
-padding: 12px 28px;
-width: 120px;
-height: 41px;
-font-weight: 600;
-font-size: 14px;
-color: #fff;
+    padding: 12px 28px;
+    width: 120px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
 }
 
 .hero-a{
     border: 1px solid #fff;
-border-radius: 100px;
-padding: 12px 28px;
-width: 159px;
-height: 41px;
-font-weight: 600;
-font-size: 14px;
-color: #fff;
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 159px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
 }
 
 .scroll{
@@ -199,12 +199,12 @@ color: #fff;
     gap: 12px;
     margin-bottom: 20px;
     font-weight: 500;
-font-size: 12px;
+    font-size: 12px;
 
-/* line-height: 14px; */ 
-line-height: 117%;
-letter-spacing: -0.03em;
-color: #fff;
+    /* line-height: 14px; */ 
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    color: #fff;
 }
 
 /*section-2 description*/
@@ -223,64 +223,129 @@ color: #fff;
 
 .icon{
     border: 1px solid rgba(255, 255, 255, 0.5);
-border-radius: 365px;
-width: 62px;
-height: 62px;
-display: flex;
-justify-content: center;
-align-items: center;
+    border-radius: 365px;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title-description{
     font-weight: 600;
-font-size: 18px;
-color: #fff;
-padding-top: 22px;
-padding-bottom: 18px;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 22px;
+    padding-bottom: 18px;
 }
 
 .txt-description{
     font-weight: 400;
-font-size: 14px;
-letter-spacing: -0.02em;
-color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .hr{
     display: none;
 }
 
-.arrow{
-    stroke: #fff;
-    fill: #fff;
+/*section-3 ingredients*/
+
+.section-ingredients{
+    padding-top: 80px;
+}
+
+.ingredients-title{
+    font-weight: 600;
+font-size: 20px;
+
+/* line-height: 24px; */ 
+line-height: 120%;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+text-align: center;
+color: #111;
+width: 280px;
+padding-bottom: 32px;
+margin: 0 auto;
+}
+
+.orange-txt{
+    color: #fd9222;
+}
+
+.ingredients-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.ingredients-blok-1, .ingredients-blok-1a, .ingredients-blok-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.ingredients-blok-2{
+    display: none;
 }
 
 .ingredients{
     border-radius: 15px;
     width: 260px;
     height: 270px;
-    background: #fd9222;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 14px 28px 28px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.ingredients-1{
+.orange{
+    background-color: #fd9222;
+}
+
+.white{
+    background-color: #fff;
     border: 1px solid #fd9222;
-    border-radius: 15px;
-    width: 260px;
-    height: 270px;
-    background: #fff;
+}
+
+.blue{
+    background-color: #1e1823;
+}
+
+.arrow{
+    stroke: #fff;
+    fill: #fff;
+    align-self: flex-end;
 }
 
 .arrow-1{
     stroke: #fd9222;
     fill: #fd9222;
+    align-self: flex-end;
 }
 
-.ingredients-2{
-    border-radius: 15px;
-    width: 260px;
-    height: 270px;
-    background: #1e1823;
+.ingredients-txt{
+    font-weight: 600;
+font-size: 14px;
+
+/* line-height: 18px; */ 
+line-height: 129%;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #111;
 }
+
+.white-txt{
+    color: #fff;
+}
+
+
 
 .footer{
     background: #1e1823;
@@ -327,24 +392,24 @@ color: rgba(255, 255, 255, 0.7);
     }
 
     .list-header{
-            font-weight: 500;
-font-size: 14px;
+        font-weight: 500;
+        font-size: 14px;
 
-/* line-height: 16px; */ 
-line-height: 114%;
-letter-spacing: -0.02em;
-color: #111;
+        /* line-height: 16px; */ 
+        line-height: 114%;
+        letter-spacing: -0.02em;
+        color: #111;
     }
 
     
-.nav-list{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    .nav-list{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
 
-}
+    }
 
     .social-list{
         gap: 14px;
@@ -353,10 +418,10 @@ color: #111;
     .link-face-heder{
         stroke: #111;
         fill: #111;border: 1px solid rgba(17, 17, 17, 0.1);
-border-radius: 10px;
-padding: 8px;
-width: 40px;
-height: 40px;
+        border-radius: 10px;
+        padding: 8px;
+        width: 40px;
+        height: 40px;
 
     }
 
@@ -376,29 +441,89 @@ height: 40px;
     }
 
     
-.hero-box{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    .hero-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-/*section-2 description*/
+    /*section-2 description*/
 
-.section-description{
-    padding: 50px 0;
-}
+    .section-description{
+        padding: 50px 0;
+    }
 
-.description-list{
-     display: flex;
-     flex-wrap: wrap;
-     column-gap: 88px;
+    .description-list{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 88px;
         row-gap: 44px;
-}
+    }
 
-.list-blok{
-     width: calc((100% - 48px) / 2);
- max-width: 308px;
-}
+    .list-blok{
+        width: calc((100% - 48px) / 2);
+    max-width: 308px;
+    }
+
+    /*section-3 ingredients*/
+
+    .section-ingredients{
+        padding-top: 100px;
+    }
+
+    .ingredients-title{
+        width: 430px;
+        font-size: 24px;
+        padding-bottom: 50px;
+    }  
+
+    .ingredients-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .ingredients-blok-1a{
+    flex-direction: column-reverse;
+    }
+
+    .ingredients-blok-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .ingredients-blok-1{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .ingredients-blok-1a{
+        gap: 32px;
+    }
+
+    .ingredients-blok-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        justify-content: center;
+    }
+
+    .ingredients-box{
+        justify-content: center;
+        gap: 32px;
+        flex-direction: row;
+    }
+
+    .ingredients{
+        width: 336px;
+        height: 270px;
+    }
 
 }
 
@@ -425,30 +550,50 @@ height: 40px;
         background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/optimiz/chocolate_main-pc.jpg);
     }
 
-/*section-2 description*/
+    /*section-2 description*/
 
-.description-list{
-    gap: 44px;
-}
+    .description-list{
+        gap: 44px;
+    }
 
-.list-blok{
-    padding-left: 44px;
-    padding-right: 0;
-}
+    .list-blok{
+        padding-left: 44px;
+        padding-right: 0;
+    }
 
-.hr{
-    display: block;
-    width: 1px;
-    height: 124px;
-    background: rgba(255, 255, 255, 0.1);
-    margin-top: 110px;
-    
+    .hr{
+        display: block;
+        width: 1px;
+        height: 124px;
+        background: rgba(255, 255, 255, 0.1);
+        margin-top: 110px;
+        
 
-}
+    }
 
-.list-blok{
-    width: 308px;
-}
+    .list-blok{
+        width: 308px;
+    }
+
+    /*section-3 ingredients*/
+
+    .section-ingredients{
+        padding-top: 120px;
+    }
+
+    .ingredients-box, .ingredients-list{
+        gap: 24px;
+    }
+
+    .ingredients-blok-1, .ingredients-blok-1a, .ingredients-blok-2{
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .ingredients{
+        width: 260px;
+        height: 270px;
+    }
 
 }
 
