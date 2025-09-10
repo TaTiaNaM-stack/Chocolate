@@ -514,6 +514,7 @@ color: #111;
 
 .chocolate-loved{
     padding-bottom: 80px;
+    height: 550px;
 }
 
 .loved-container{
@@ -521,12 +522,19 @@ color: #111;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .elips-list{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.elips{
+    position: relative;
+    bottom: -80px;
 }
 
 .client{
@@ -534,6 +542,10 @@ color: #111;
     flex-direction: column;
     align-items: center;
     gap: 18px;
+    position: absolute;
+    bottom: 60%;
+    right: 20%;
+    left: 25%;
 }
 
 .name{
@@ -562,6 +574,7 @@ color: #111;
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(17, 17, 17, 0.7);
+    padding-bottom: 90px;
 }
 
 .btn-review{
@@ -575,7 +588,8 @@ color: #111;
     font-size: 14px;
     text-align: center;
     color: #111;
-    margin-top: 32px;
+    position: absolute;
+    bottom: -150px;
 }
 
 /*footer*/
@@ -803,10 +817,23 @@ color: #111;
 
     /*section-7 chocolate-loved*/
 
+    .chocolate-loved{
+        height: 620px;
+    }
+
     .elips-list{
         display: flex;
         gap: 16px;
     }
+
+    .btn-review{
+        width: 222px;
+        height: 50px;
+        font-size: 18px;
+        bottom: -170px;
+    }
+
+    /*footer*/
 
 
 }
@@ -860,10 +887,6 @@ color: #111;
     }
 
     /*section-3 ingredients*/
-
-    .section, .section-ingredients{
-        padding-top: 120px;
-    }
 
     .ingredients-box, .ingredients-list{
         gap: 24px;
@@ -920,9 +943,15 @@ color: #111;
 
     /*section-7 chocolate-loved*/
 
+    .chocolate-loved{
+        height: 660px;
+    }
+
     .elips-list{
         gap: 28px;
     }
+
+    /*footer*/
 
 }
 
