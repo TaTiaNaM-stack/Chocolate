@@ -510,6 +510,74 @@ color: #111;
     justify-content: center;
 }
 
+/*section-7 chocolate-loved*/
+
+.chocolate-loved{
+    padding-bottom: 80px;
+}
+
+.loved-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elips-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 18px;
+
+    /* line-height: 24px; */ 
+    line-height: 133%;
+    text-align: center;
+    color: #111;
+}
+
+.box-review{
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    width: 335px;
+    height: 200px;
+    box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+    background: #fff;
+    padding: 104px 18px 42px 18px;
+    font-weight: 400;
+    font-size: 14px;
+
+    /* line-height: 18px; */ 
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.btn-review{
+    border: 1px solid #fd9222;
+    background: transparent;
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 165px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #111;
+    margin-top: 32px;
+}
+
 /*footer*/
 
 .footer{
@@ -733,6 +801,14 @@ color: #111;
         align-items: center;
     }
 
+    /*section-7 chocolate-loved*/
+
+    .elips-list{
+        display: flex;
+        gap: 16px;
+    }
+
+
 }
 
 @media (min-resolution: 192dpi) {
@@ -840,6 +916,12 @@ color: #111;
 
     .card-3{
         display: block;
+    }
+
+    /*section-7 chocolate-loved*/
+
+    .elips-list{
+        gap: 28px;
     }
 
 }
