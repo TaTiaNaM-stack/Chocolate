@@ -256,19 +256,27 @@ img{
     padding-top: 80px;
 }
 
+.section, .section-ingredients{
+    padding-top: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .ingredients-title{
     font-weight: 600;
-font-size: 20px;
+    font-size: 20px;
 
-/* line-height: 24px; */ 
-line-height: 120%;
-letter-spacing: -0.03em;
-text-transform: uppercase;
-text-align: center;
-color: #111;
-width: 280px;
-padding-bottom: 32px;
-margin: 0 auto;
+    /* line-height: 24px; */ 
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+    width: 280px;
+    padding-bottom: 32px;
+    margin: 0 auto;
 }
 
 .orange-txt{
@@ -346,10 +354,6 @@ color: #111;
 }
 
 /*section-4 made*/
-
-.section-made{
-    padding: 80px 0;
-}
 
 .image-made-mob{
     display: block;
@@ -462,6 +466,48 @@ color: #111;
     font-weight: 600;
     font-size: 14px;
     color: #111;
+}
+
+/*section-6 section-top-sellers*/
+
+.top-sellers-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-2, .card-3{
+    display: none;
+}
+
+.active{
+    width: 344px;
+    height: 544px;
+}
+
+.img-top{
+    border-radius: 15px 15px 0 0;
+    backdrop-filter: blur(15px);
+    background: linear-gradient(161deg, rgba(253, 253, 255, 0.1) 0%, rgba(8, 2, 21, 0.1) 100%);
+}
+
+.active-down{
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+    border-left: 1px solid rgba(17, 17, 17, 0.1);
+    border-right: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 0 0 15px 15px;
+    height: 72px;
+    font-weight: 600;
+    font-size: 18px;
+
+    /* line-height: 24px; */ 
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*footer*/
@@ -586,7 +632,7 @@ color: #111;
 
     /*section-3 ingredients*/
 
-    .section-ingredients{
+    .section, .section-ingredients{
         padding-top: 100px;
     }
 
@@ -667,9 +713,24 @@ color: #111;
     /*section-5 products*/
 
     .choco-list{
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         column-gap: 32px;
         flex-direction: row;
+    }
+
+    /*section-6 section-top-sellers*/
+
+    .card-2{
+        display: block;
+    }
+
+    .top-sellers-list{
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -724,7 +785,7 @@ color: #111;
 
     /*section-3 ingredients*/
 
-    .section-ingredients{
+    .section, .section-ingredients{
         padding-top: 120px;
     }
 
@@ -773,6 +834,12 @@ color: #111;
         width: 270px;
         height: 364px;
         width: calc((100% - 18px * 3) / 4);
+    }
+
+    /*section-6 section-top-sellers*/
+
+    .card-3{
+        display: block;
     }
 
 }
