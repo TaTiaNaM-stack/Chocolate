@@ -595,10 +595,51 @@ color: #111;
 /*footer*/
 
 .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #1e1823;
     color: #fff;
+    padding: 32px 5px;
 }
 
+.footer-title{
+    font-weight: 500;
+    font-size: 24px;
+
+    /* line-height: 28px; */ 
+    line-height: 117%;
+    letter-spacing: -0.02em;
+
+ }
+
+ .footer-reverse{
+    display: flex;
+    gap: 32px;
+    flex-direction: column-reverse;
+    margin: 32px 0;
+ }
+
+ .footer-address{
+    font-weight: 400;
+    font-size: 14px;
+
+    /* line-height: 18px; */ 
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+ }
+
+ .soc-footer{
+    margin-bottom: 14px;
+ }
+
+ .soc-media{
+    justify-content: flex-start;
+    display: flex;
+ }
 
 .link-face{
     stroke: #fff;
