@@ -585,7 +585,7 @@ color: #111;
     transition: transform 0.3s ease;
 }
 
-.active-down:hover, .active-down:focus .card-opacity{
+.active:hover, .active:focus .card-opacity{
     transform: translateY(0%);
 }
 
