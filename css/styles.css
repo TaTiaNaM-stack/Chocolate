@@ -7,6 +7,7 @@ body{
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  background-color: #fafafa;
 }
 
 section {
@@ -583,6 +584,8 @@ color: #111;
     width: 344px;
     height: 544px;
     transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .active:hover, .active:focus .card-opacity{
@@ -836,6 +839,40 @@ color: #111;
     background-color: #fd9222;
     border: none;
     color: #fff;
+}
+
+/*modal*/
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.modal{
+    border-radius: 15px;
+    width: 311px;
+    min-height: 622px;
+    background: #fafafa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+
+.modal-close{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-color: transparent;
 }
 
 @media screen and (min-width: 768px){
