@@ -863,6 +863,9 @@ color: #111;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .modal-close{
@@ -873,6 +876,87 @@ color: #111;
     height: 28px;
     border: none;
     background-color: transparent;
+}
+
+.icon-close{
+    stroke: #111;
+}
+
+.modal-title{
+    text-align: left;
+    max-width: 255px;
+    margin-bottom: 32px;
+}
+
+.modal-label{
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+    margin-bottom: 4px;
+}
+
+.input-relative{
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.modal-input{
+    width: 100%;
+    border: 1.50px solid rgba(17, 17, 17, 0.15);
+    border-radius: 8px;
+    padding: 13px 18px;
+    padding-left: 43px;
+    width: 263px;
+    height: 46px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: #404040;
+    outline: transparent;
+    transition: 250ms;
+}
+
+.icon-user{
+    stroke: #404040;
+    position: absolute;
+    left: 18px;
+    bottom: 50%;
+    transform: translateY(50%);
+    transition: 250ms;
+    fill: transparent;
+}
+
+.modal-input:hover{
+    border: 1.50px solid #fd9222;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+}
+
+.modal-input:hover + .icon-user{
+    stroke: #fd9222;
+}
+
+.txt-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.area-modal{
+    border: 1.50px solid rgba(17, 17, 17, 0.15);
+    border-radius: 8px;
+    padding: 13px 18px 60px;
+    width: 263px;
+    height: 91px;
+    background-color: transparent;
+    /* box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);*/
+} 
+
+.area-moda::placeholder{
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
 }
 
 @media screen and (min-width: 768px){
