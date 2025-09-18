@@ -136,10 +136,10 @@ img{
     border: none;
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
-.burger-menu:hover .mobil-menu,
-.burger-menu:focus .mobil-menu{ 
+.burger-menu:hover .mobil-menu{ 
     transform: translateX(0%);
 }
 
@@ -147,6 +147,11 @@ img{
     stroke: #111;
     stroke-width: 2px;
     fill: #111;
+}
+
+.hdr-relative{
+    position: relative;
+     overflow: hidden;
 }
 
 .mobil-menu{
@@ -205,8 +210,7 @@ img{
     
 }
 
-.mob-a:hover,
-.mob-a:focus{
+.mob-a:hover{
     color: #fd9222;
 }
 
@@ -584,18 +588,11 @@ color: #111;
     width: 344px;
     height: 544px;
     transition: transform 0.3s ease;
-    position: relative;
-    overflow: hidden;
+   
 }
 
-.active:hover, .active:focus .card-opacity{
+.active:hover .card-opacity{
     transform: translateY(0%);
-}
-
-.img-top{
-    border-radius: 15px 15px 0 0;
-    backdrop-filter: blur(15px);
-    background: linear-gradient(161deg, rgba(253, 253, 255, 0.1) 0%, rgba(8, 2, 21, 0.1) 100%);
 }
 
 .img-top-hover{
@@ -606,6 +603,9 @@ color: #111;
 .card-opacity{
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     font-weight: 400;
     font-size: 14px;
 
