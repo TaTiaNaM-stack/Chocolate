@@ -928,13 +928,18 @@ color: #111;
     fill: transparent;
 }
 
-.modal-input:hover{
+.modal-input:hover,
+.area-modal:hover{
     border: 1.50px solid #fd9222;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
 }
 
 .modal-input:hover + .icon-user{
     stroke: #fd9222;
+}
+
+.area{
+    margin-bottom: 0;
 }
 
 .txt-area{
@@ -949,6 +954,8 @@ color: #111;
     width: 263px;
     height: 91px;
     background-color: transparent;
+    outline: transparent;
+    resize: both;
     /* box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);*/
 } 
 
@@ -957,6 +964,76 @@ color: #111;
     font-size: 13px;
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
+}
+
+.checkbox-relative{
+    position: relative;
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.modal-checkbox:checked + .modal-check-label .modal-check-yes{
+    background-color: #fd9222;
+    border: none;
+    fill: #fff;
+}
+
+.modal-check-yes{
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(17, 17, 17, 0.14);
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 250ms;
+    fill: transparent;
+    position: absolute;
+    left: 0;
+}
+
+.modal-check-label{
+    width: 231px;
+    font-weight: 400;
+    font-size: 12px;
+
+    /* line-height: 16px; */ 
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.6);
+}
+
+.policy-a{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fd9222;
+}
+
+.modal-btn{
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 93px;
+    height: 41px;
+    background-color: #fd9222;
+    border: none;
+    margin-top: 32px;
+}
+
+.modal-btn:hover{
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 120px;
+    height: 41px;
+    background: #fcf1e0;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fd9222;
 }
 
 @media screen and (min-width: 768px){
@@ -1215,6 +1292,26 @@ color: #111;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    /*modal*/
+
+    .modal{
+        width: 517px;
+    }
+
+    .icon-close{
+        width: 28px;
+        height: 28px;
+    }
+
+    .mob-title-br{
+        display: none;
+    }
+
+    .modal-title{
+        width: 298px;
+        font-size: 24px;
     }
 
 }
