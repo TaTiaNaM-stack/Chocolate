@@ -906,7 +906,7 @@ color: #111;
     border-radius: 8px;
     padding: 13px 18px;
     padding-left: 43px;
-    width: 263px;
+    max-width: 263px;
     height: 46px;
     background-color: transparent;
     font-weight: 400;
@@ -1311,6 +1311,36 @@ color: #111;
     .modal-title{
         width: 298px;
         font-size: 24px;
+    }
+
+    .modal-input{
+        min-width: 437px;
+    }
+    
+    .area-modal{
+        min-width: 437px;
+        height: 137px;
+    }
+
+    .checkbox-relative{
+        justify-content: flex-start;
+    }
+
+    .visually-hidden-pc{
+        opacity: 0;
+    }
+
+    .modal-check-label{
+        font-size: 14px;
+        min-width: 364px;
+        padding-left: 12px;
+    }
+
+    .modal-btn{
+        width: 117px;
+        height: 45px;
+        padding: 14px 40px;
+        margin-top: 40px;
     }
 
 }
