@@ -870,8 +870,8 @@ color: #111;
 
 .modal-close{
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 14px;
+    right: 14px;
     width: 28px;
     height: 28px;
     border: none;
@@ -1299,6 +1299,11 @@ color: #111;
         width: 517px;
     }
 
+    .modal-close{
+        top: 24px;
+        right: 24px;
+    }
+
     .icon-close{
         width: 28px;
         height: 28px;
@@ -1309,8 +1314,9 @@ color: #111;
     }
 
     .modal-title{
-        width: 298px;
+        max-width: 298px;
         font-size: 24px;
+        margin-left: 0;
     }
 
     .modal-input{
